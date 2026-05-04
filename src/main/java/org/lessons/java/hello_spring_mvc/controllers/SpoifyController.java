@@ -7,11 +7,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 @RequestMapping("/")
 
-public class SecretPageController {
+public class SpoifyController {
 
-    @GetMapping("/secretPage")
-    public String secretPage() {
-        return "secretPage";
+    @GetMapping("/spotifyPage")
+    public String spotify() {
+        return "spotify";
     }
-
 }
