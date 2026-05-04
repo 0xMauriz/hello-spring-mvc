@@ -1,0 +1,509 @@
+/*******************************
+    Desktop version, width 990px
+*******************************/
+
+/* REGOLE GENERALI */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+.white-txt {
+    color: white;
+}
+
+.gray-txt {
+    color: gray;
+}
+
+.gray-fill {
+    fill: gray;
+}
+
+h2 {
+    color: white;
+}
+
+.somemargin {
+    margin-left: 5px;
+}
+
+/* FINE REGOLE GENERALI */
+
+
+.jumbo {
+    display: flex;
+    flex-wrap: wrap;
+    height: calc(100% - 70px);
+}
+
+.left-bar {
+    width: 200px;
+    height: calc(100vh - 70px);
+    background-color: black;
+}
+
+.logo {
+    padding: 30px 30px 30px 20px;
+    height: 90px;
+}
+
+.logo img {
+    width: 80%;
+}
+
+.app-actions {
+    height: 120px;
+}
+
+.general-action {
+    display: flex;
+    align-items: center;
+    color: gray;
+    height: calc(100% / 3);
+    padding-left: 15px;
+    border: 3px solid rgba(255, 255, 255, 0);
+}
+
+.actions-image {
+    height: 65%;
+}
+
+.home-nohover {
+    height: 65%;
+}
+
+.general-action-txt {
+    font-size: 13px;
+    padding-left: 5px;
+    font-weight: 700;
+}
+
+.playlist-and-profile-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: calc(100vh - 260px);
+}
+
+.create-playlist {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 13px;
+    color: gray;
+    margin-top: 10px;
+    padding: 7px;
+}
+
+.playlists-box {
+    height: 40%;
+}
+
+.playlists-box h2 {
+    padding-left: 15px;
+    padding-top: 15px;
+    font-size: 15px;
+}
+
+.playlists-box li {
+    margin-top: 13px;
+    padding-left: 15px;
+    font-size: 13px;
+    font-weight: 700;
+    color: gray;
+}
+
+.profile-box {
+    height: 30%;
+    padding: 10px 5px 15px 5px;
+}
+
+.appinstall svg {
+    width: 50px;
+    height: 50%;
+}
+
+/*
+.profile svg {
+    background-color: gray;
+    color: white;
+    border-radius: 50px;
+}
+*/
+
+.appinstall {
+    display: flex;
+    border-bottom: 1px solid gray;
+    flex-wrap: nowrap;
+
+}
+
+.appinstall-txt {
+    display: flex;
+    font-size: 12px;
+    width: 50%;
+    align-items: center;
+}
+
+.profile {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.image-and-profile-box {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    padding-right: 10px;
+}
+
+.image-box {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 30%;
+    padding: 7px 16px 6px 15px;
+}
+
+.profile-icon {
+    fill: white;
+    background-color: rgba(128, 128, 128);
+    border-radius: 50px;
+}
+
+.profile-txt {
+    display: flex;
+    font-size: 12px;
+    width: 70%;
+    align-items: center;
+}
+
+.fa-square-plus {
+    color: gray;
+    background-color: black;
+    font-size: 35px;
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    color: white;
+    border-left: 3px solid rgb(67, 255, 50);
+}
+
+.music-page-and-topbar {
+    width: calc(100% - 200px);
+    height: calc(100vh - 70px);
+    background-color: rgb(24, 24, 24);
+    overflow-y: scroll;
+}
+
+.top-bar {
+    width: 100%;
+    height: 120px;
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.upgrade-button-box {
+    display: flex;
+    height: 80px;
+    width: 100%;
+    padding-left: 75%;
+    align-items: center;
+}
+
+.upgrade-button {
+    color: rgb(255, 255, 255);
+    background-color: black;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 50px;
+    padding: 10px 35px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    font-weight: 700;
+    height: calc(100% - 80px);
+    background-color: rgb(24, 24, 24);
+    color: gray;
+}
+
+.navbar :first-child {
+    border-bottom: 3px solid rgb(67, 255, 50)
+}
+
+.music-page {
+    height: calc(100% - 190px);
+}
+
+.recently-played {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.recently-played h2 {
+    width: 100%;
+    font-size: 13px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.recently-played h3 {
+    width: 100%;
+    margin: 30px 0 30px 30px;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.recently-played p {
+    color: gray;
+    width: 100%;
+    font-size: 13px;
+    margin-top: 6px;
+    text-align: center;
+}
+
+.card {
+    display: flex;
+    width: calc((100% / 6) - 120px / 6);
+    flex-direction: column;
+    position: relative;
+}
+
+.created-by-you, .popular-artists {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-top: 40px;
+}
+
+.card-second-type {
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.created-by-you h3, .popular-artists h3 {
+    margin-left: 30px;
+}
+
+.created-by-you p, .popular-artists p {
+    margin-left: 30px;
+    width: 100%;
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+.created-by-you h2, .popular-artists h2 {
+    width: 100%;
+    font-size: 17px;
+    margin-top: 25px;
+    text-align: center;
+    padding-bottom: 60px;
+}
+
+.round-img {
+    border-radius: 200px;
+}
+
+.music-player {
+    display: flex;
+    position: sticky;
+    background-color: rgb(24, 24, 24);
+    height: 70px;
+    padding: 14px 10px 9px 10px;
+    justify-content: space-between;
+}
+
+.listening-to {
+    display: flex;
+    align-items: center;
+    width: 210px;
+    font-size: 10px;
+}
+
+.listening-to img {
+    width: 22%;
+}
+
+.listening-to h2, .listening-to p {
+    margin-left: 13px;
+}
+
+.listening-to i {
+    font-size: 17px;
+    margin-left: 14px;
+}
+
+.songactions-and-songduration{
+    display: flex;
+    width: 20%;
+    flex-wrap: wrap;
+}
+
+.songactions {
+    display: flex;
+    width: 90%;
+    justify-content: space-around;
+}
+
+.songduration {
+    width: 100%;
+}
+
+.list-broadcast-volume {
+    display: flex;
+    width: 20%;
+    align-items: center;
+    gap: 15px;
+}
+
+.fake-volumebar {
+    background-color: lightgray;
+    color: lightgray;
+    width: 50%;
+    height: 15%;
+    color: rgba(0, 0, 0, 0.001);
+}
+
+/*********************************
+            HOVER SECTION
+*********************************/
+
+.upgrade-button:hover {
+    display: block;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.hoverplay {
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.344);
+    width: 100%;
+    height: 67%;
+    margin-top: 0px;
+    cursor: pointer;
+}
+
+.card:hover .hoverplay {
+    display: flex;
+    font-size: 40px;
+    margin-top: 0px;
+    align-items: center;
+    justify-content: center;
+}
+
+.hoverplay-mod {
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.344);
+    width: 100%;
+    height: 65%;
+    cursor: pointer;
+}
+
+.card:hover .hoverplay-mod {
+    display: flex;
+    font-size: 40px;
+    margin-top: 0px;
+    margin-left: 0px;
+    align-items: center;
+    justify-content: center;
+}
+
+.hoverplay-mod1 {
+    display: none;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.344);
+    width: 100%;
+    height: 65%;
+    cursor: pointer;
+}
+
+.card:hover .hoverplay-mod1 {
+    display: flex;
+    font-size: 40px;
+    margin-top: 0px;
+    margin-left: 0px;
+    border-radius: 200px;
+    align-items: center;
+    justify-content: center;
+}
+
+.hover-p:hover {
+    display: block;
+    color: white;
+    cursor: pointer;
+}
+
+.whitehover:hover {
+    display: flex;
+    color: white;
+    fill: white;
+    cursor: pointer;
+}
+
+.appinstall:hover, .profile:hover, .whitehover-download:hover {
+    display: flex;
+    fill: #ffffff;
+    cursor: pointer;
+}
+
+
+.create-playlist:hover {
+    color: white;
+    padding-right: 7px;
+}
+
+.create-playlist i:hover {
+    display: flex;
+    color: white;
+    margin-left: 5px;
+}
+
+
+.appinstall:hover {
+    display: flex;
+    color: white;
+    fill: white;
+    cursor: pointer;
+}
+
+.bighover:hover {
+    font-size: 19px;
+    cursor: pointer;
+}
+
+
+
+/********************************
+
+    Viewport per max 769px
+
+********************************/
+
+
+@media screen and (max-width: 769px) {
+    
+    .card {
+        min-width: 110px;
+    }
+
+    .recently-played {
+        justify-content: flex-start;
+        gap: 20px;
+    }
+
+}
+
