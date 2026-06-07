@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 @RequestMapping("/")
 
-public class SpoifyController {
+public class SpotifyController {
 
     @GetMapping("/spotifyPage")
     public String spotify() {
